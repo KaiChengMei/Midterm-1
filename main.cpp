@@ -244,6 +244,16 @@ public:
 
 int main() {
     cout << MIN_NR + MIN_LS + MAX_NR + MAX_LS;  // dummy statement to avoid compiler warning
+    DoublyLinkedList list;
+
+    // inset some numbers
+    list.push_back(2);
+    list.push_back(4);
+    list.push_back(6);
+    list.push_back(8);
+    list.push_back(10);
+    list.push_back(12);
+    list.push_back(14);
 
     
     return 0;
