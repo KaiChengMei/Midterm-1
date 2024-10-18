@@ -217,13 +217,24 @@ public:
             return;
         }
 
-        // if list not empty
+        // if list not empty and not end
         while(current) {
+            // if the number is odd print
             if (position % 2 = 1 ) {
-                cout << 
+                cout << current->next;
             }
-        }
 
+            // if the number even, do nothing
+
+            // next node
+            position++; 
+
+            // and if next node is last node, exit
+            if ( current->next == nullptr ) (
+                break;
+            )
+        }
+        cout << endl;
 
     }
 };
