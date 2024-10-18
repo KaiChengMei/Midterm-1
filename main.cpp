@@ -208,6 +208,9 @@ public:
     void every_other_element() {
         Node* current =head;
 
+        // first say what we gonna ouput
+        cout << "List out outout every other miniutes: ";
+
         // marking position with creating "position"
         int position = 0
 
