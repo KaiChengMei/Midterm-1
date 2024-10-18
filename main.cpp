@@ -212,7 +212,7 @@ public:
         cout << "List out outout every other miniutes: ";
 
         // marking position with creating "position"
-        int position = 0
+        int position = 0;
 
         // if it is empty list
         if (!current) { 
@@ -223,8 +223,8 @@ public:
         // if list not empty and not end
         while(current) {
             // if the number is odd print
-            if (position % 2 = 1 ) {
-                cout << current->next;
+            if (position % 2 == 0 ) {
+                cout << current->data << " "; // add space
             }
 
             // if the number even, do nothing
@@ -232,10 +232,13 @@ public:
             // next node
             position++; 
 
+            // debug: should pointer next node
+            current = current->next;
+
             // and if next node is last node, exit
-            if ( current->next == nullptr ) (
+            if ( current == nullptr ) {
                 break;
-            )
+            }
         }
         cout << endl;
 
@@ -255,6 +258,12 @@ int main() {
     list.push_back(12);
     list.push_back(14);
 
+    // print the origin list first
+    cout << "List: ";
+    list.print();
+
+    // print every other element
+    list.every_other_element();
     
     return 0;
 }
